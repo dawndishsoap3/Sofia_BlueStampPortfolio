@@ -7,8 +7,9 @@ You should comment out all portions of your portfolio that you have not complete
 <!--- Anything between these symbols will not render on the published site -->
 ```
 
-| **Engineer** | **School** | **Area of Interest** | **Grade** ||:--:|:--:|:--:|:--:|
-| Sofia H | Lynbrook | CS/Robotics | Incoming Sophmore
+| **Engineer** | **School** | **Area of Interest** | **Grade** |
+|:--:|:--:|:--:|:--:|
+| Sofia H | Lynbrook | CS/Robotics | Incoming Sophmore 
 
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
