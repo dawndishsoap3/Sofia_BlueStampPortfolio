@@ -48,11 +48,28 @@ For your second milestone, explain what you've worked on since your previous mil
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ISGqGEbCcpE?si=TqQMsiPEvNbvCroy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
+- Integration:
+The stepper motor is attached to the makeshift rail(metal bar) using flat pieces of acrylic + 3D platforms to drag the platform up when the stepper motor moves up/down.
+The motor along with a rack & pinion mechanism will be attached on top of the platform to pull/push the wedge.
+The motor will driver the gear forwards or backwards to push or pull the pinion part of the mechanism.
+The motor itself is powered by an external battery of around 6v along with an H-bridge.
+The motor driver along with the external power source will drive the rotation process of the stepper motor so the platform + nut moves up & down along the bar.
+
 - Technical progress:
+
 The entire idea including the design and the first prototype following design finished. Also recieved most of the needed materials for the building process and tested the TT DC gear motor with the L298N motor driver; Nema 17 stepper motor + TMC2209 motor driver successfully. Multiple portions of the overall design were also cadded, printed and altered to fit into the rest of the materials. I used a combination of pieces of acrylic & 3D prints to create the main backing of the mechanism.
 
-- Challenges you're facing and solving in your future milestones
+- Challenges:
+Cadding on Onshape:
+Started working with cadding & Onshape for the first time & could not figure out how to maneuver around & create specific shapes with the system.
+
+Drilling through acrylic:
+Acrylic is incredibly easy to fracture through drilling, so drill bits had to slowly increase in size being one of the most time-consuming parts of the project so far. My first try at drilling through broke part of the acrylic clean off about half way through a 30 min process.
+
+Working with Nema 17 Stepper Motor:
+Since a 12V battery was unavailable, a giant power generating box was usedWhen wiring I made a mistake connecting the motor driver GND to the power source and the power source to GND.
+
+
 - What your plan is to complete your project
 
 # Schematics 
