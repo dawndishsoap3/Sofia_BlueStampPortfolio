@@ -51,36 +51,27 @@ For your first milestone, describe what your project is and how you plan to buil
 
 - Integration:
 The stepper motor is attached to the makeshift rail(metal bar) using flat pieces of acrylic + 3D platforms to drag the platform up when the stepper motor moves up/down.
-
 The motor along with a rack & pinion mechanism will be attached on top of the platform to pull/push the wedge.
-
 The motor will driver the gear forwards or backwards to push or pull the pinion part of the mechanism.
-
 The motor itself is powered by an external battery of around 6v along with an H-bridge.
-
 The motor driver along with the external power source will drive the rotation process of the stepper motor so the platform + nut moves up & down along the bar.
 
 
 - Technical progress:
-
 The entire idea including the design and the first prototype following design finished. Also recieved most of the needed materials for the building process and tested the TT DC gear motor with the L298N motor driver; Nema 17 stepper motor + TMC2209 motor driver successfully. Multiple portions of the overall design were also cadded, printed and altered to fit into the rest of the materials. I used a combination of pieces of acrylic & 3D prints to create the main backing of the mechanism.
 
 - Challenges:
-  
 Cadding on Onshape:
-
 Started working with cadding & Onshape for the first time & could not figure out how to maneuver around & create specific shapes with the system.
 
 Drilling through acrylic:
-
 Acrylic is incredibly easy to fracture through drilling, so drill bits had to slowly increase in size being one of the most time-consuming parts of the project so far. My first try at drilling through broke part of the acrylic clean off about half way through a 30 min process.
 
 Working with Nema 17 Stepper Motor:
-
-Since a 12V battery was unavailable, a giant power generating box was used When wiring I made a mistake connecting the motor driver GND to the power source and the power source to GND.
-
+Since a 12V battery was unavailable, a giant power generating box was used in its place untill the power adapter arrived. When wiring I made a mistake connecting the motor driver GND to the power source and the power source to GND & may or may not have shorted the motor driver and cooked the wire. On the second try the wiring had go be repetitively fixed but the major issue lied in the potentiometer being autoset to the highest setting and drawing way too much current. The entire process took around a whole session's worth of time to fix with instructor help.
 
 - What your plan is to complete your project
+My plan is to continue finishing the rest of the main structure as well as the backing in the next week along with integration with the limit switch x motor. Hopefully the second milestone will completely finished by the end of next week and the third milestone almost done. 
 
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
@@ -107,7 +98,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Stepper Motor | Main backing structure & controls along the y-axis | $21.59 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/gp/product/B0D22G2RG6/ref=ewc_pr_img_1?smid=A18QU8XMRRHZ9O&th=1)"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
