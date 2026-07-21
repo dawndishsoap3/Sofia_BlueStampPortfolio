@@ -91,6 +91,18 @@ void loop() {
 
 }
 ```
+# Start Project: Retro Arcade Console
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GA7f74dMpFM?si=IPN6mD2wxSBYlFqZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Process:
+The starter project was very soldering heavy with bits of screwing around attaching the acrylic plates around the mechanism. Every single piece came in a bag or attached to foam pieces to protect the backing & the instruction maneul was to attach at the front then solder at the back. The project was relatively simple in terms of instructions.
+
+Challenges:
+Despite the project itself being quite a simple concept, I made a mistake on the first step which led to a small problem that took much longer than it should have. The piece connecting the board and the outer port had one of the major prongs out of the hole it was supposed to be in, and as a result the solder had to be removed from the back. I only noticed the issue when the starter project was nearly done, so part of the challenge was removing the casing of the project & part of the connecting battery holder to get to the section.The one issue was that the solder was effectively stuck in the board and the solder remover didn't work, along with steel wool or ever removing the solder from the front of the board. I recieved a lot of help from instructers during the struggle and the final resort was pulling the entire thing out of the socket and replacing it with a new one.
+
+How it works:
+The final mechanism can either be connected to a computer through the port or recieve power through 3AA batteries on the back. The entire casing is clear so you can see the entire structure clearly. The button with the red cap on it is the on/off switch for the game & it starts with sound coming from the piezo buzzer direcly below the on/off switch. There are a total of 5 games, of which the 2 I'm familiar with are Tetris and a shooter game. You can scroll through all the games by press the left/right keys. The LED screed on the top right will display your highest score for each game as you scroll through them all. The yellow button with the square symbol at the top represents the start key for any of the games, and for the shooter game it also shoots the beam at the oncoming enemies. The button right below it with the X symbol represents the pause/unpause button for the games. 
 
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
