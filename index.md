@@ -99,6 +99,9 @@ Don't forget to place the link of where to buy each component inside the quotati
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Stepper Motor | Main backing structure & controls along the y-axis | $21.59 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/gp/product/B0D22G2RG6/ref=ewc_pr_img_1?smid=A18QU8XMRRHZ9O&th=1)"> Link </a> |
+| Limit Switch | Limit when the arduino tells the DC motor to stop spinning | $5.99 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/gp/product/B07X142VGC/ref=ewc_pr_img_4?smid=A30QSGOJR8LMXA&psc=1)"> Link </a> |
+| TMC2209 Stepper Motor Driver | Drives the Nema 17 | $13.99 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/gp/product/B08SMDY3SQ/ref=ewc_pr_img_3?smid=A2K1WYI5NZ8QSW&th=1)"> Link </a> |
+| Metal Rod | Other part of the side structure | $19.99 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/gp/product/B08HYK1TLG/ref=ewc_pr_img_9?smid=A2COIW4JKWLTTA&th=1)"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
