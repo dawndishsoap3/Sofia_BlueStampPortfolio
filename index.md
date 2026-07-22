@@ -1,7 +1,9 @@
 # Layered clothing separation system
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
+```Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!```
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
+This project is based off of a consistant problem present in closets, specified towards those who stack their clothes up in large sections of closet. Though its workability remains debatable, the project itself is meant to be a mechanism stacked beside the original set-up to take up little room but lift up layers of clothes to avoid the chaos from pulling out one piece of clothing.
+
+```You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:```
 ```HTML 
 <!--- This is an HTML comment in Markdown -->
 <!--- Anything between these symbols will not render on the published site -->
@@ -61,16 +63,16 @@ The motor driver along with the external power source will drive the rotation pr
 The entire idea including the design and the first prototype following design finished. Also recieved most of the needed materials for the building process and tested the TT DC gear motor with the L298N motor driver; Nema 17 stepper motor + TMC2209 motor driver successfully. Multiple portions of the overall design were also cadded, printed and altered to fit into the rest of the materials. I used a combination of pieces of acrylic & 3D prints to create the main backing of the mechanism.
 
 - Challenges:
-Cadding on Onshape:
+  Cadding on Onshape:
 Started working with cadding & Onshape for the first time & could not figure out how to maneuver around & create specific shapes with the system.
 
-Drilling through acrylic:
+  Drilling through acrylic:
 Acrylic is incredibly easy to fracture through drilling, so drill bits had to slowly increase in size being one of the most time-consuming parts of the project so far. My first try at drilling through broke part of the acrylic clean off about half way through a 30 min process.
 
-Working with Nema 17 Stepper Motor:
+  Working with Nema 17 Stepper Motor:
 Since a 12V battery was unavailable, a giant power generating box was used in its place untill the power adapter arrived. When wiring I made a mistake connecting the motor driver GND to the power source and the power source to GND & may or may not have shorted the motor driver and cooked the wire. On the second try the wiring had go be repetitively fixed but the major issue lied in the potentiometer being autoset to the highest setting and drawing way too much current. The entire process took around a whole session's worth of time to fix with instructor help.
 
-- What your plan is to complete your project
+  What your plan is to complete your project
 My plan is to continue finishing the rest of the main structure as well as the backing in the next week along with integration with the limit switch x motor. Hopefully the second milestone will completely finished by the end of next week and the third milestone almost done. 
 
 # Schematics 
