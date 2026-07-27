@@ -38,10 +38,35 @@ For your final milestone, explain the outcome of your project. Key details to in
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
+
+- What needs to be completed:
+Need to find a way to connect the pinion part of the mechanism onto the actual structure in a way that doesn't topple the entire wedge.
+Create the wedge.
+Attach the DC motor.
+Add the modification for the controller to control the stepper motor + DC.
+
+- Integration:
+New:
+Rubber Bands hold the entire right end of the structure down to balance out the sides.
+The entire other side of the main structure provides the platform for the clothes to lie on top of, considering the mechanism cannot reach below the base of the motor/structure.
+Linear bearing used for smoother motion along the metal bar.
+The rack part of the system is glued onto the spinning portion of the DC motor.
+
+Old:
+The stepper motor is attached to the makeshift rail(metal bar) using flat pieces of acrylic + 3D platforms to drag the platform up when the stepper motor moves up/down.
+The motor along with a rack & pinion mechanism will be attached on top of the platform to pull/push the wedge.
+The motor will driver the gear forwards or backwards to push or pull the pinion part of the mechanism.
+The motor itself is powered by an external battery of around 6v along with an H-bridge.
+The motor driver along with the external power source will drive the rotation process of the stepper motor so the platform + nut moves up & down along the bar.
+
+- Challenges:
+Balance:
+Since one side of the main structure is a metal bar, the rest of the structure can slide along it freely. Even when connected to the other part of the structure on the stepper motor it consistantly slides down. When the stepper motor itself moves down, the other side follows relatively smoothly, but when the stepper motor moves upwards instead the acrylic plate would just bend and the other side of the plate would get stuck. My solution was to use tension to (somewhat) fix the problem by adding an extra upwards turning 'hook' on the platform with the stepper motor and connecte it to the bottom of the structure. The result partially worked by pulling the weight of the structure towards the stepper motor side, but more weight added towards both sides in the future would offset that balance, but thats a future problem.
+
+Limit Switches:
+The actual connection between the wire and the limit switch itself was incredebly fragile, so the biggest problem I had with the switches would be the wire completely breaking off, so the version currently on the project is the 5-6th version. Actually wrapping the wire itself around the connection was another challenge considering the wires wouldn't always pass the hole through the connection, which would sometimes result in weak connections especially when I first started working with the switches.
+
+
 
 # First Milestone
 
@@ -57,6 +82,7 @@ The motor along with a rack & pinion mechanism will be attached on top of the pl
 The motor will driver the gear forwards or backwards to push or pull the pinion part of the mechanism.
 The motor itself is powered by an external battery of around 6v along with an H-bridge.
 The motor driver along with the external power source will drive the rotation process of the stepper motor so the platform + nut moves up & down along the bar.
+
 
 
 - Technical progress:
