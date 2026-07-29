@@ -24,10 +24,48 @@ This project is based off of a consistant problem present in closets, specified 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+
+- Challenges
+Rail:
+Create a fitting support to attach to the pinion that won't stick or get stuck on the rail. Both the rail itself and the structure took multiple cadded attempts to get right, with it frequently getting stuck along the rail and being hard to remove/slide again.
+
+Platform Supports:
+Due to a lack of time, the 3D printed support was incredibly weak, and it frequently snapped with extra pressure from the turnbuckle. The solution was to add copius amounts of hot clue to secure it, which ended up working out decently well.
+
+Rack + Pinion:
+1. Other side of structure
+Initially the gear would keep on jumping on one end of the structure so that the pinion wouldn't run straight. My solution was to cad a separate system that can attach into the gear but still allow it to turn but preventing it from jumping upwards.
+
+2. Servo Motor
+The servo motor itself wasn't attached very well to the structure, so it would still jump when the gear was running, so I got help from dad to cut up some wood to nail the servo into to prevent excess movement. There were also lots of issues later on with the wood being too high and the gear still jumping steps, and so I just removed more hot glue on the bottom and sanded the bottom of the wood pieces.
+
+
+- What I hope to learn in the future
+I need to be more innovative with my ideas and think ahead. For this project I didn't end up with enough time to fix the major issue of the project not entirely working for its intended purpose of folded clothes. For one thing the structure is too small and limited  to work with full sized clothes, and for another thing the wedge often gets stuck at even the smallest inconsistencies with the clothing, which causes the whole thing to somewhat malfunction. Instructors did tell me that it would be an issue, but the project itself took more time than I presumed, and at the start I believed precision from the user would simply be enough so time management and thinking ahead of time. I also want to solve issues with larger scopes instead of smaller projects that are niche in use.
+
+- Integration:
+New:
+Added lead screw to create extra support for other end of the platform.
+3D printed and cadded a support for turnbuckle to latch onto.
+Printed a Rail + supports to stick onto the pinion for the pinion to latch onto.
+Controller + wiring to control both stepper motor and servo motor.
+Extra platform to hold breadboard + Arduino.
+Replace previous DC motor with servo motor for better torque
+Printed alternate side to rack to hold in in place and ensure the gear goes over both pinions without jumping.
+Attached wooden backing to servo motor to secure it without extra movement.
+Rubber bands removed and replaced with turnbuckle. Turnbuckle latches onto 3D printed connector and the platform on the other side to secure somewhat equal placing on both ends.
+
+
+Old:
+Rubber Bands hold the entire right end of the structure down to balance out the sides.
+The entire other side of the main structure provides the platform for the clothes to lie on top of, considering the mechanism cannot reach below the base of the motor/structure.
+Linear bearing used for smoother motion along the metal bar.
+The rack part of the system is glued onto the spinning portion of the DC motor.
+The stepper motor is attached to the makeshift rail(metal bar) using flat pieces of acrylic + 3D platforms to drag the platform up when the stepper motor moves up/down.
+The motor along with a rack & pinion mechanism will be attached on top of the platform to pull/push the wedge.
+The motor will driver the gear forwards or backwards to push or pull the pinion part of the mechanism.
+The motor itself is powered by an external battery of around 6v along with an H-bridge.
+The motor driver along with the external power source will drive the rotation process of the stepper motor so the platform + nut moves up & down along the bar.
 
 
 
