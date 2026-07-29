@@ -147,16 +147,307 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```c++
+#include <Servo.h>
+
+
+// --- FUNCTION PROTOTYPES ---
+void moveDistanceMM(float distanceMM, bool direction);
+void stepMotor(bool direction, unsigned long delayMicros);
+
+
+// --- MOTOR PINS (NEMA 17 Stepper) ---
+const int stepPin = 3;
+const int dirPin  = 4;
+const int enPin   = 5;
+
+
+// --- SERVO PIN ---
+const int SERVO_PIN = 9;
+
+
+// --- BUTTON PINS ---
+const int btnServoToggle = 10; // Button to start/toggle Servo sequence
+const int btnUp          = 11;
+const int btnDown        = 12;
+const int btnQuit        = 13;
+
+
+// --- LIMIT SWITCH PINS (For Servo) ---
+const int SWITCH_1 = 6;
+const int SWITCH_2 = 2; // Pressing this stops servo completely
+
+
+// --- STEPPER MOTOR SETTINGS (From Code 1) ---
+const float STEPS_PER_MM = 25.0;       
+const float TARGET_SPEED_MM_PER_SEC = 8.0; // Fast speed (8.0 mm/s)
+
+
+const unsigned long stepDelayMicros = (1000000.0 / (STEPS_PER_MM * TARGET_SPEED_MM_PER_SEC)) / 2.0;
+
+
+// Track stepper position in millimeters
+float currentPositionMM = 0.0;
+
+
+// --- STEPPER CONTINUOUS STATE TRACKING (From Code 1) ---
+bool isContinuousUP   = false;
+bool isContinuousDOWN = false;
+
+
+unsigned long lastUpPressTime   = 0;
+unsigned long lastDownPressTime = 0;
+const unsigned long DOUBLE_PRESS_WINDOW = 500;
+
+
+// Edge detection variables for buttons
+int lastBtnUpState   = HIGH;
+int lastBtnDownState = HIGH;
+
+
+// --- SERVO OBJECT & STATE TRACKING (From Code 2) ---
+Servo myServo;
+bool servoActive = false;
+bool movingTo180 = true;
+
+
+// Edge detection variables for Servo controls
+int lastSwitch1State  = HIGH;
+int lastSwitch2State  = HIGH;
+int lastServoBtnState = HIGH;
+
+
 void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600);
-  Serial.println("Hello World!");
+ Serial.begin(9600);
+
+
+ // Stepper pin setup
+ pinMode(stepPin, OUTPUT);
+ pinMode(dirPin, OUTPUT);
+ pinMode(enPin, OUTPUT);
+ digitalWrite(enPin, LOW); // Enable driver
+
+
+ // Button & Switch setup with internal pull-ups
+ pinMode(btnUp, INPUT_PULLUP);
+ pinMode(btnDown, INPUT_PULLUP);
+ pinMode(btnQuit, INPUT_PULLUP);
+ pinMode(btnServoToggle, INPUT_PULLUP);
+ pinMode(SWITCH_1, INPUT_PULLUP);
+ pinMode(SWITCH_2, INPUT_PULLUP);
+
+
+ Serial.println("--- System Ready (Servo Idle until Pin 10 pressed) ---");
 }
+
 
 void loop() {
-  // put your main code here, to run repeatedly:
+ // Read current states
+ int btnUpState    = digitalRead(btnUp);
+ int btnDownState  = digitalRead(btnDown);
+ bool quitPressed  = (digitalRead(btnQuit) == LOW);
 
+
+ int switch1State  = digitalRead(SWITCH_1);
+ int switch2State  = digitalRead(SWITCH_2);
+ int servoBtnState = digitalRead(btnServoToggle);
+
+
+ // ==========================================
+ // 1. SERVO CONTROL LOGIC (Exclusively from Code 2)
+ // ==========================================
+ if (servoBtnState == LOW && lastServoBtnState == HIGH) {
+   if (!servoActive) {
+     servoActive = true;
+     myServo.attach(SERVO_PIN);
+     Serial.println("Pin 10 Pressed! Starting Servo sequence...");
+   } else {
+     movingTo180 = !movingTo180;
+     Serial.println("Pin 10 Pressed! Toggling Servo direction...");
+   }
+   delay(50); // Debounce
+ }
+
+
+ if (switch1State == LOW && lastSwitch1State == HIGH) {
+   if (!servoActive) {
+     servoActive = true;
+     myServo.attach(SERVO_PIN);
+   }
+   movingTo180 = !movingTo180;
+   Serial.println("Switch 1 Pressed! Toggling Servo direction...");
+   delay(50);
+ }
+
+
+ if (switch2State == LOW && lastSwitch2State == HIGH) {
+   movingTo180 = !movingTo180;
+   servoActive = false;
+   myServo.detach();
+   Serial.println("Switch 2 Pressed! Toggled direction and STOPPED Servo.");
+   delay(50);
+ }
+
+
+ lastSwitch1State  = switch1State;
+ lastSwitch2State  = switch2State;
+ lastServoBtnState = servoBtnState;
+
+
+ if (servoActive) {
+   if (movingTo180) {
+     myServo.write(180);
+   } else {
+     myServo.write(0);
+   }
+ }
+
+
+ // ==========================================
+ // 2. STEPPER MOTOR BUTTON PRESS LOGIC (Exclusively from Code 1)
+ // ==========================================
+
+
+ // --- UP BUTTON DETECT ---
+ if (btnUpState == LOW && lastBtnUpState == HIGH) {
+   unsigned long currentTime = millis();
+
+
+   if (isContinuousUP || isContinuousDOWN) {
+     isContinuousUP   = false;
+     isContinuousDOWN = false;
+     lastUpPressTime  = 0;
+     Serial.println("Continuous Movement STOPPED via UP Press.");
+   } else {
+     if (currentTime - lastUpPressTime <= DOUBLE_PRESS_WINDOW) {
+       isContinuousUP  = true;
+       lastUpPressTime = 0;
+       Serial.println("Double Press UP! Starting Continuous UP Movement...");
+     } else {
+       lastUpPressTime = currentTime;
+       Serial.println("UP Pressed (Pin 11) - Moving 1mm");
+       moveDistanceMM(1.0, HIGH);
+     }
+   }
+   delay(50); // Debounce
+ }
+
+
+ // --- DOWN BUTTON DETECT ---
+ if (btnDownState == LOW && lastBtnDownState == HIGH) {
+   unsigned long currentTime = millis();
+
+
+   if (isContinuousUP || isContinuousDOWN) {
+     isContinuousUP   = false;
+     isContinuousDOWN = false;
+     lastDownPressTime = 0;
+     Serial.println("Continuous Movement STOPPED via DOWN Press.");
+   } else {
+     if (currentTime - lastDownPressTime <= DOUBLE_PRESS_WINDOW) {
+       isContinuousDOWN  = true;
+       lastDownPressTime = 0;
+       Serial.println("Double Press DOWN! Starting Continuous DOWN Movement...");
+     } else {
+       lastDownPressTime = currentTime;
+       Serial.println("DOWN Pressed (Pin 12) - Moving 1mm");
+       moveDistanceMM(1.0, LOW);
+     }
+   }
+   delay(50); // Debounce
+ }
+
+
+ lastBtnUpState   = btnUpState;
+ lastBtnDownState = btnDownState;
+
+
+ // --- QUIT BUTTON ---
+ if (quitPressed) {
+   isContinuousUP   = false;
+   isContinuousDOWN = false;
+
+
+   Serial.println("QUIT Pressed (Pin 13) - Returning to 0.0 mm");
+
+
+   if (currentPositionMM > 0.0) {
+     Serial.print("Retracting ");
+     Serial.print(currentPositionMM);
+     Serial.println(" mm...");
+     moveDistanceMM(currentPositionMM, LOW);
+   } else {
+     Serial.println("Already at position zero.");
+   }
+
+
+   Serial.println("Arrived at 0.0 mm.");
+   delay(200);
+ }
+
+
+ // ==========================================
+ // 3. STEPPER CONTINUOUS EXECUTION LOOP
+ // ==========================================
+ if (isContinuousUP) {
+   stepMotor(HIGH, stepDelayMicros);
+   currentPositionMM += (1.0 / STEPS_PER_MM);
+ } else if (isContinuousDOWN) {
+   stepMotor(LOW, stepDelayMicros);
+   currentPositionMM -= (1.0 / STEPS_PER_MM);
+ }
 }
+
+
+// Low-level helper to pulse stepper once
+void stepMotor(bool direction, unsigned long delayMicros) {
+ digitalWrite(enPin, LOW);
+ digitalWrite(dirPin, direction);
+ digitalWrite(stepPin, HIGH);
+ delayMicroseconds(10);
+ digitalWrite(stepPin, LOW);
+ delayMicroseconds(delayMicros);
+}
+
+
+// Function to drive the Stepper Motor fixed distance (With acceleration ramp)
+void moveDistanceMM(float distanceMM, bool direction) {
+ digitalWrite(enPin, LOW);
+ delayMicroseconds(10);
+ digitalWrite(dirPin, direction);
+ int totalSteps = distanceMM * STEPS_PER_MM;
+ unsigned long currentDelay = stepDelayMicros * 2;
+
+
+ for (int i = 0; i < totalSteps; i++) {
+   digitalWrite(stepPin, HIGH);
+   delayMicroseconds(10);
+   digitalWrite(stepPin, LOW);
+   delayMicroseconds(currentDelay);
+
+
+   // Acceleration ramp over first 20 steps
+   if (i < 20 && currentDelay > stepDelayMicros) {
+     currentDelay -= (stepDelayMicros / 20);
+     if (currentDelay < stepDelayMicros) {
+       currentDelay = stepDelayMicros;
+     }
+   }
+ }
+
+
+ // Update track position
+ if (direction == HIGH) {
+   currentPositionMM += distanceMM;
+ } else {
+   currentPositionMM -= distanceMM;
+ }
+
+
+ Serial.print("Current Stepper Position: ");
+ Serial.print(currentPositionMM);
+ Serial.println(" mm");
+}
+
 ```
 # Start Project: Retro Arcade Console
 
