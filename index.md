@@ -19,17 +19,15 @@ This project is based off of a consistant problem present in closets, specified 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pXLjiaRDFJA?si=oMpKDkiPru_itYRW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For your final milestone, explain the outcome of your project. Key details to include are:
-
 - Challenges
   
--- Rail:
+  - Rail:
 Create a fitting support to attach to the pinion that won't stick or get stuck on the rail. Both the rail itself and the structure took multiple cadded attempts to get right, with it frequently getting stuck along the rail and being hard to remove/slide again.
 
--- Platform Supports:
+  - Platform Supports:
 Due to a lack of time, the 3D printed support was incredibly weak, and it frequently snapped with extra pressure from the turnbuckle. The solution was to add copius amounts of hot clue to secure it, which ended up working out decently well.
 
--- Rack + Pinion:
+  - Rack + Pinion:
 1. Other side of structure
 Initially the gear would keep on jumping on one end of the structure so that the pinion wouldn't run straight. My solution was to cad a separate system that can attach into the gear but still allow it to turn but preventing it from jumping upwards.
 
@@ -40,33 +38,33 @@ The servo motor itself wasn't attached very well to the structure, so it would s
 
 - What I hope to learn in the future
   
-I need to be more innovative with my ideas and think ahead. For this project I didn't end up with enough time to fix the major issue of the project not entirely working for its intended purpose of folded clothes. For one thing the structure is too small and limited  to work with full sized clothes, and for another thing the wedge often gets stuck at even the smallest inconsistencies with the clothing, which causes the whole thing to somewhat malfunction. Instructors did tell me that it would be an issue, but the project itself took more time than I presumed, and at the start I believed precision from the user would simply be enough so time management and thinking ahead of time. I also want to solve issues with larger scopes instead of smaller projects that are niche in use.
+    - I need to be more innovative with my ideas and think ahead. For this project I didn't end up with enough time to fix the major issue of the project not entirely working for its intended purpose of folded clothes. For one thing the structure is too small and limited  to work with full sized clothes, and for another thing the wedge often gets stuck at even the smallest inconsistencies with the clothing, which causes the whole thing to somewhat malfunction. Instructors did tell me that it would be an issue, but the project itself took more time than I presumed, and at the start I believed precision from the user would simply be enough so time management and thinking ahead of time. I also want to solve issues with larger scopes instead of smaller projects that are niche in use.
 
 
 - Integration:
 
-New:
-Added lead screw to create extra support for other end of the platform.
-3D printed and cadded a support for turnbuckle to latch onto.
-Printed a Rail + supports to stick onto the pinion for the pinion to latch onto.
-Controller + wiring to control both stepper motor and servo motor.
-Extra platform to hold breadboard + Arduino.
-Replace previous DC motor with servo motor for better torque
-Printed alternate side to rack to hold in in place and ensure the gear goes over both pinions without jumping.
-Attached wooden backing to servo motor to secure it without extra movement.
-Rubber bands removed and replaced with turnbuckle. Turnbuckle latches onto 3D printed connector and the platform on the other side to secure somewhat equal placing on both ends.
+  - New:
+    - Added lead screw to create extra support for other end of the platform.
+    - 3D printed and cadded a support for turnbuckle to latch onto.
+    - Printed a Rail + supports to stick onto the pinion for the pinion to latch onto.
+    - Controller + wiring to control both stepper motor and servo motor.
+    - Extra platform to hold breadboard + Arduino.
+    - Replace previous DC motor with servo motor for better torque
+    - Printed alternate side to rack to hold in in place and ensure the gear goes over both pinions without jumping.
+    - Attached wooden backing to servo motor to secure it without extra movement.
+    - Rubber bands removed and replaced with turnbuckle. Turnbuckle latches onto 3D printed connector and the platform on the other side to secure somewhat equal placing on both ends.
 
 
-Old:
-Rubber Bands hold the entire right end of the structure down to balance out the sides.
-The entire other side of the main structure provides the platform for the clothes to lie on top of, considering the mechanism cannot reach below the base of the motor/structure.
-Linear bearing used for smoother motion along the metal bar.
-The rack part of the system is glued onto the spinning portion of the DC motor.
-The stepper motor is attached to the makeshift rail(metal bar) using flat pieces of acrylic + 3D platforms to drag the platform up when the stepper motor moves up/down.
-The motor along with a rack & pinion mechanism will be attached on top of the platform to pull/push the wedge.
-The motor will driver the gear forwards or backwards to push or pull the pinion part of the mechanism.
-The motor itself is powered by an external battery of around 6v along with an H-bridge.
-The motor driver along with the external power source will drive the rotation process of the stepper motor so the platform + nut moves up & down along the bar.
+  - Old:
+    - Rubber Bands hold the entire right end of the structure down to balance out the sides.
+    - The entire other side of the main structure provides the platform for the clothes to lie on top of, considering the mechanism cannot reach below the base of the motor/structure.
+    - Linear bearing used for smoother motion along the metal bar.
+    - The rack part of the system is glued onto the spinning portion of the DC motor.
+    - The stepper motor is attached to the makeshift rail(metal bar) using flat pieces of acrylic + 3D platforms to drag the platform up when the stepper motor moves up/down.
+    - The motor along with a rack & pinion mechanism will be attached on top of the platform to pull/push the wedge.
+    - The motor will driver the gear forwards or backwards to push or pull the pinion part of the mechanism.
+    - The motor itself is powered by an external battery of around 6v along with an H-bridge.
+    - The motor driver along with the external power source will drive the rotation process of the stepper motor so the platform + nut moves up & down along the bar.
 
 
 
@@ -80,31 +78,32 @@ The motor driver along with the external power source will drive the rotation pr
 For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
 
 - What needs to be completed:
-Need to find a way to connect the pinion part of the mechanism onto the actual structure in a way that doesn't topple the entire wedge.
-Create the wedge.
-Attach the DC motor.
-Add the modification for the controller to control the stepper motor + DC.
+    - Need to find a way to connect the pinion part of the mechanism onto the actual structure in a way that doesn't topple the entire wedge.
+    - Create the wedge.
+    - Attach the DC motor.
+    - Add the modification for the controller to control the stepper motor + DC.
 
 - Integration:
-New:
-Rubber Bands hold the entire right end of the structure down to balance out the sides.
-The entire other side of the main structure provides the platform for the clothes to lie on top of, considering the mechanism cannot reach below the base of the motor/structure.
-Linear bearing used for smoother motion along the metal bar.
-The rack part of the system is glued onto the spinning portion of the DC motor.
 
-Old:
-The stepper motor is attached to the makeshift rail(metal bar) using flat pieces of acrylic + 3D platforms to drag the platform up when the stepper motor moves up/down.
-The motor along with a rack & pinion mechanism will be attached on top of the platform to pull/push the wedge.
-The motor will driver the gear forwards or backwards to push or pull the pinion part of the mechanism.
-The motor itself is powered by an external battery of around 6v along with an H-bridge.
-The motor driver along with the external power source will drive the rotation process of the stepper motor so the platform + nut moves up & down along the bar.
+  - New:
+    - Rubber Bands hold the entire right end of the structure down to balance out the sides.
+    - The entire other side of the main structure provides the platform for the clothes to lie on top of, considering the mechanism cannot reach below the base of the motor/structure.
+    - Linear bearing used for smoother motion along the metal bar.
+    - The rack part of the system is glued onto the spinning portion of the DC motor.
+
+  - Old:
+    - The stepper motor is attached to the makeshift rail(metal bar) using flat pieces of acrylic + 3D platforms to drag the platform up when the stepper motor moves up/down.
+    - The motor along with a rack & pinion mechanism will be attached on top of the platform to pull/push the wedge.
+    - The motor will driver the gear forwards or backwards to push or pull the pinion part of the mechanism.
+    - The motor itself is powered by an external battery of around 6v along with an H-bridge.
+    - The motor driver along with the external power source will drive the rotation process of the stepper motor so the platform + nut moves up & down along the bar.
 
 - Challenges:
 
--- Balance:
+  - Balance:
 Since one side of the main structure is a metal bar, the rest of the structure can slide along it freely. Even when connected to the other part of the structure on the stepper motor it consistantly slides down. When the stepper motor itself moves down, the other side follows relatively smoothly, but when the stepper motor moves upwards instead the acrylic plate would just bend and the other side of the plate would get stuck. My solution was to use tension to (somewhat) fix the problem by adding an extra upwards turning 'hook' on the platform with the stepper motor and connecte it to the bottom of the structure. The result partially worked by pulling the weight of the structure towards the stepper motor side, but more weight added towards both sides in the future would offset that balance, but thats a future problem.
 
--- Limit Switches:
+  - Limit Switches:
 The actual connection between the wire and the limit switch itself was incredebly fragile, so the biggest problem I had with the switches would be the wire completely breaking off, so the version currently on the project is the 5-6th version. Actually wrapping the wire itself around the connection was another challenge considering the wires wouldn't always pass the hole through the connection, which would sometimes result in weak connections especially when I first started working with the switches.
 
 
@@ -118,11 +117,11 @@ The actual connection between the wire and the limit switch itself was incredebl
 For your first milestone, describe what your project is and how you plan to build it. You can include:
 
 - Integration:
-The stepper motor is attached to the makeshift rail(metal bar) using flat pieces of acrylic + 3D platforms to drag the platform up when the stepper motor moves up/down.
-The motor along with a rack & pinion mechanism will be attached on top of the platform to pull/push the wedge.
-The motor will driver the gear forwards or backwards to push or pull the pinion part of the mechanism.
-The motor itself is powered by an external battery of around 6v along with an H-bridge.
-The motor driver along with the external power source will drive the rotation process of the stepper motor so the platform + nut moves up & down along the bar.
+    - The stepper motor is attached to the makeshift rail(metal bar) using flat pieces of acrylic + 3D platforms to drag the platform up when the stepper motor moves up/down.
+    - The motor along with a rack & pinion mechanism will be attached on top of the platform to pull/push the wedge.
+    - The motor will driver the gear forwards or backwards to push or pull the pinion part of the mechanism.
+    - The motor itself is powered by an external battery of around 6v along with an H-bridge.
+    - The motor driver along with the external power source will drive the rotation process of the stepper motor so the platform + nut moves up & down along the bar.
 
 
 
@@ -130,16 +129,16 @@ The motor driver along with the external power source will drive the rotation pr
 The entire idea including the design and the first prototype following design finished. Also recieved most of the needed materials for the building process and tested the TT DC gear motor with the L298N motor driver; Nema 17 stepper motor + TMC2209 motor driver successfully. Multiple portions of the overall design were also cadded, printed and altered to fit into the rest of the materials. I used a combination of pieces of acrylic & 3D prints to create the main backing of the mechanism.
 
 - Challenges:
--- Cadding on Onshape:
+  - Cadding on Onshape:
 Started working with cadding & Onshape for the first time & could not figure out how to maneuver around & create specific shapes with the system.
 
--- Drilling through acrylic:
+  - Drilling through acrylic:
 Acrylic is incredibly easy to fracture through drilling, so drill bits had to slowly increase in size being one of the most time-consuming parts of the project so far. My first try at drilling through broke part of the acrylic clean off about half way through a 30 min process.
 
--- Working with Nema 17 Stepper Motor:
+  - Working with Nema 17 Stepper Motor:
 Since a 12V battery was unavailable, a giant power generating box was used in its place untill the power adapter arrived. When wiring I made a mistake connecting the motor driver GND to the power source and the power source to GND & may or may not have shorted the motor driver and cooked the wire. On the second try the wiring had go be repetitively fixed but the major issue lied in the potentiometer being autoset to the highest setting and drawing way too much current. The entire process took around a whole session's worth of time to fix with instructor help.
 
-  What your plan is to complete your project
+- What your plan is to complete your project
 My plan is to continue finishing the rest of the main structure as well as the backing in the next week along with integration with the limit switch x motor. Hopefully the second milestone will completely finished by the end of next week and the third milestone almost done. 
 
 # Schematics 
