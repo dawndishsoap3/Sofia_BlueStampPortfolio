@@ -15,8 +15,6 @@ This project is based off of a consistant problem present in closets, specified 
   
 # Final Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pXLjiaRDFJA?si=oMpKDkiPru_itYRW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 - Challenges
@@ -70,7 +68,6 @@ The servo motor itself wasn't attached very well to the structure, so it would s
 
 # Second Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UdAOEMXKUa8?si=n13M24BPBgDxM0hO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -101,16 +98,15 @@ For your second milestone, explain what you've worked on since your previous mil
 - Challenges:
 
   - Balance:
-Since one side of the main structure is a metal bar, the rest of the structure can slide along it freely. Even when connected to the other part of the structure on the stepper motor it consistantly slides down. When the stepper motor itself moves down, the other side follows relatively smoothly, but when the stepper motor moves upwards instead the acrylic plate would just bend and the other side of the plate would get stuck. My solution was to use tension to (somewhat) fix the problem by adding an extra upwards turning 'hook' on the platform with the stepper motor and connecte it to the bottom of the structure. The result partially worked by pulling the weight of the structure towards the stepper motor side, but more weight added towards both sides in the future would offset that balance, but thats a future problem.
+    - Since one side of the main structure is a metal bar, the rest of the structure can slide along it freely. Even when connected to the other part of the structure on the stepper motor it consistantly slides down. When the stepper motor itself moves down, the other side follows relatively smoothly, but when the stepper motor moves upwards instead the acrylic plate would just bend and the other side of the plate would get stuck. My solution was to use tension to (somewhat) fix the problem by adding an extra upwards turning 'hook' on the platform with the stepper motor and connecte it to the bottom of the structure. The result partially worked by pulling the weight of the structure towards the stepper motor side, but more weight added towards both sides in the future would offset that balance, but thats a future problem.
 
   - Limit Switches:
-The actual connection between the wire and the limit switch itself was incredebly fragile, so the biggest problem I had with the switches would be the wire completely breaking off, so the version currently on the project is the 5-6th version. Actually wrapping the wire itself around the connection was another challenge considering the wires wouldn't always pass the hole through the connection, which would sometimes result in weak connections especially when I first started working with the switches.
+    - The actual connection between the wire and the limit switch itself was incredebly fragile, so the biggest problem I had with the switches would be the wire completely breaking off, so the version currently on the project is the 5-6th version. Actually wrapping the wire itself around the connection was another challenge considering the wires wouldn't always pass the hole through the connection, which would sometimes result in weak connections especially when I first started working with the switches.
 
 
 
 # First Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ISGqGEbCcpE?si=TqQMsiPEvNbvCroy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -126,20 +122,20 @@ For your first milestone, describe what your project is and how you plan to buil
 
 
 - Technical progress:
-The entire idea including the design and the first prototype following design finished. Also recieved most of the needed materials for the building process and tested the TT DC gear motor with the L298N motor driver; Nema 17 stepper motor + TMC2209 motor driver successfully. Multiple portions of the overall design were also cadded, printed and altered to fit into the rest of the materials. I used a combination of pieces of acrylic & 3D prints to create the main backing of the mechanism.
+    - The entire idea including the design and the first prototype following design finished. Also recieved most of the needed materials for the building process and tested the TT DC gear motor with the L298N motor driver; Nema 17 stepper motor + TMC2209 motor driver successfully. Multiple portions of the overall design were also cadded, printed and altered to fit into the rest of the materials. I used a combination of pieces of acrylic & 3D prints to create the main backing of the mechanism.
 
 - Challenges:
   - Cadding on Onshape:
 Started working with cadding & Onshape for the first time & could not figure out how to maneuver around & create specific shapes with the system.
 
   - Drilling through acrylic:
-Acrylic is incredibly easy to fracture through drilling, so drill bits had to slowly increase in size being one of the most time-consuming parts of the project so far. My first try at drilling through broke part of the acrylic clean off about half way through a 30 min process.
+    - Acrylic is incredibly easy to fracture through drilling, so drill bits had to slowly increase in size being one of the most time-consuming parts of the project so far. My first try at drilling through broke part of the acrylic clean off about half way through a 30 min process.
 
   - Working with Nema 17 Stepper Motor:
-Since a 12V battery was unavailable, a giant power generating box was used in its place untill the power adapter arrived. When wiring I made a mistake connecting the motor driver GND to the power source and the power source to GND & may or may not have shorted the motor driver and cooked the wire. On the second try the wiring had go be repetitively fixed but the major issue lied in the potentiometer being autoset to the highest setting and drawing way too much current. The entire process took around a whole session's worth of time to fix with instructor help.
+    - Since a 12V battery was unavailable, a giant power generating box was used in its place untill the power adapter arrived. When wiring I made a mistake connecting the motor driver GND to the power source and the power source to GND & may or may not have shorted the motor driver and cooked the wire. On the second try the wiring had go be repetitively fixed but the major issue lied in the potentiometer being autoset to the highest setting and drawing way too much current. The entire process took around a whole session's worth of time to fix with instructor help.
 
 - What your plan is to complete your project
-My plan is to continue finishing the rest of the main structure as well as the backing in the next week along with integration with the limit switch x motor. Hopefully the second milestone will completely finished by the end of next week and the third milestone almost done. 
+    - My plan is to continue finishing the rest of the main structure as well as the backing in the next week along with integration with the limit switch x motor. Hopefully the second milestone will completely finished by the end of next week and the third milestone almost done. 
 
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
@@ -455,17 +451,16 @@ void moveDistanceMM(float distanceMM, bool direction) {
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GA7f74dMpFM?si=IPN6mD2wxSBYlFqZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Process:
-The starter project was very soldering heavy with bits of screwing around attaching the acrylic plates around the mechanism. Every single piece came in a bag or attached to foam pieces to protect the backing & the instruction maneul was to attach at the front then solder at the back. The project was relatively simple in terms of instructions.
+    - The starter project was very soldering heavy with bits of screwing around attaching the acrylic plates around the mechanism. Every single piece came in a bag or attached to foam pieces to protect the backing & the instruction maneul was to attach at the front then solder at the back. The project was relatively simple in terms of instructions.
 
 Challenges:
-Despite the project itself being quite a simple concept, I made a mistake on the first step which led to a small problem that took much longer than it should have. The piece connecting the board and the outer port had one of the major prongs out of the hole it was supposed to be in, and as a result the solder had to be removed from the back. I only noticed the issue when the starter project was nearly done, so part of the challenge was removing the casing of the project & part of the connecting battery holder to get to the section.The one issue was that the solder was effectively stuck in the board and the solder remover didn't work, along with steel wool or ever removing the solder from the front of the board. I recieved a lot of help from instructers during the struggle and the final resort was pulling the entire thing out of the socket and replacing it with a new one.
+    - Despite the project itself being quite a simple concept, I made a mistake on the first step which led to a small problem that took much longer than it should have. The piece connecting the board and the outer port had one of the major prongs out of the hole it was supposed to be in, and as a result the solder had to be removed from the back. I only noticed the issue when the starter project was nearly done, so part of the challenge was removing the casing of the project & part of the connecting battery holder to get to the section.The one issue was that the solder was effectively stuck in the board and the solder remover didn't work, along with steel wool or ever removing the solder from the front of the board. I recieved a lot of help from instructers during the struggle and the final resort was pulling the entire thing out of the socket and replacing it with a new one.
 
 How it works:
-The final mechanism can either be connected to a computer through the port or recieve power through 3AA batteries on the back. The entire casing is clear so you can see the entire structure clearly. The button with the red cap on it is the on/off switch for the game & it starts with sound coming from the piezo buzzer direcly below the on/off switch. There are a total of 5 games, of which the 2 I'm familiar with are Tetris and a shooter game. You can scroll through all the games by press the left/right keys. The LED screed on the top right will display your highest score for each game as you scroll through them all. The yellow button with the square symbol at the top represents the start key for any of the games, and for the shooter game it also shoots the beam at the oncoming enemies. The button right below it with the X symbol represents the pause/unpause button for the games. 
+  - The final mechanism can either be connected to a computer through the port or recieve power through 3AA batteries on the back. The entire casing is clear so you can see the entire structure clearly. The button with the red cap on it is the on/off switch for the game & it starts with sound coming from the piezo buzzer direcly below the on/off switch. There are a total of 5 games, of which the 2 I'm familiar with are Tetris and a shooter game. You can scroll through all the games by press the left/right keys. The LED screed on the top right will display your highest score for each game as you scroll through them all. The yellow button with the square symbol at the top represents the start key for any of the games, and for the shooter game it also shoots the beam at the oncoming enemies. The button right below it with the X symbol represents the pause/unpause button for the games. 
 
 # Bill of Materials
-Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
+
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
@@ -487,9 +482,4 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Wood | Stabilize rail + Servo | NA | NA |
 
 # Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
 
-To watch the BSE tutorial on how to create a portfolio, click here.
