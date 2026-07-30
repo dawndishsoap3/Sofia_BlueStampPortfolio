@@ -476,6 +476,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Metal Rod | Other part of the side structure | $19.99 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/gp/product/B08HYK1TLG/ref=ewc_pr_img_9?smid=A2COIW4JKWLTTA&th=1)"> Link </a> |
 |Lead Screws | Attachment to secure other platform | $4.99 | <a href="[[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/gp/product/B08HYK1TLG/ref=ewc_pr_img_9?smid=A2COIW4JKWLTTA&th=1)](https://www.amazon.com/gp/product/B079HQ386R/ref=ox_sc_act_image_3?smid=A31QZVWR40HWH8&th=1)"> Link </a> |
 | 4AA Battery holder | Provide power to Servo | $5.88 | <a href="[[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/gp/product/B08HYK1TLG/ref=ewc_pr_img_9?smid=A2COIW4JKWLTTA&th=1)](https://www.amazon.com/gp/product/B0DZX39MHK/ref=ox_sc_act_title_6?smid=AQ37Z5F5L6GWK&psc=1)"> Link </a> |
+| Polythylene Sheets | Wedge Material | $12.99 | <a href="[[[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/gp/product/B08HYK1TLG/ref=ewc_pr_img_9?smid=A2COIW4JKWLTTA&th=1)](https://www.amazon.com/gp/product/B0DZX39MHK/ref=ox_sc_act_title_6?smid=AQ37Z5F5L6GWK&psc=1)](https://www.amazon.com/gp/product/B0F6BKVBMR/ref=ox_sc_act_image_15?smid=A2PM3NVHLMC8ZC&th=1)"> Link </a> |
 |4-pronged buttons | Controller | NA | NA |
 | Breadboard | extra wiring | NA | NA |
 | Hot Glue | Attachment | NA | NA |
