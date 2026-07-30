@@ -21,7 +21,7 @@ This project is based off of a consistant problem present in closets, specified 
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pXLjiaRDFJA?si=oMpKDkiPru_itYRW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For your final milestone, explain the outcome of your project. Key details to include are:
 
@@ -40,8 +40,10 @@ Initially the gear would keep on jumping on one end of the structure so that the
 The servo motor itself wasn't attached very well to the structure, so it would still jump when the gear was running, so I got help from dad to cut up some wood to nail the servo into to prevent excess movement. There were also lots of issues later on with the wood being too high and the gear still jumping steps, and so I just removed more hot glue on the bottom and sanded the bottom of the wood pieces.
 
 
+
 - What I hope to learn in the future
 I need to be more innovative with my ideas and think ahead. For this project I didn't end up with enough time to fix the major issue of the project not entirely working for its intended purpose of folded clothes. For one thing the structure is too small and limited  to work with full sized clothes, and for another thing the wedge often gets stuck at even the smallest inconsistencies with the clothing, which causes the whole thing to somewhat malfunction. Instructors did tell me that it would be an issue, but the project itself took more time than I presumed, and at the start I believed precision from the user would simply be enough so time management and thinking ahead of time. I also want to solve issues with larger scopes instead of smaller projects that are niche in use.
+
 
 - Integration:
 New:
@@ -146,7 +148,7 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
-```c++
+c++
 #include <Servo.h>
 
 
@@ -448,7 +450,7 @@ void moveDistanceMM(float distanceMM, bool direction) {
  Serial.println(" mm");
 }
 
-```
+
 # Start Project: Retro Arcade Console
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GA7f74dMpFM?si=IPN6mD2wxSBYlFqZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -472,8 +474,17 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Limit Switch | Limit when the arduino tells the DC motor to stop spinning | $5.99 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/gp/product/B07X142VGC/ref=ewc_pr_img_4?smid=A30QSGOJR8LMXA&psc=1)"> Link </a> |
 | TMC2209 Stepper Motor Driver | Drives the Nema 17 | $13.99 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/gp/product/B08SMDY3SQ/ref=ewc_pr_img_3?smid=A2K1WYI5NZ8QSW&th=1)"> Link </a> |
 | Metal Rod | Other part of the side structure | $19.99 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/gp/product/B08HYK1TLG/ref=ewc_pr_img_9?smid=A2COIW4JKWLTTA&th=1)"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+|Lead Screws | Attachment to secure other platform | $4.99 | <a href="[[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/gp/product/B08HYK1TLG/ref=ewc_pr_img_9?smid=A2COIW4JKWLTTA&th=1)](https://www.amazon.com/gp/product/B079HQ386R/ref=ox_sc_act_image_3?smid=A31QZVWR40HWH8&th=1)"> Link </a> |
+| 4AA Battery holder | Provide power to Servo | $5.88 | <a href="[[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/gp/product/B08HYK1TLG/ref=ewc_pr_img_9?smid=A2COIW4JKWLTTA&th=1)](https://www.amazon.com/gp/product/B0DZX39MHK/ref=ox_sc_act_title_6?smid=AQ37Z5F5L6GWK&psc=1)"> Link </a> |
+|4-pronged buttons | Controller | NA | NA |
+| Breadboard | extra wiring | NA | NA |
+| Hot Glue | Attachment | NA | NA |
+| Jumper Wires| Wiring | NA | NA |
+| Acrylic Plates | Structure | NA | NA |
+| Header Pins | Structure | NA | NA |
+
+| Acrylic Plates | Structure | NA | NA |
+| Wood | Stabilize rail + Servo | NA | NA |
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
