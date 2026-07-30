@@ -1,9 +1,7 @@
 # Layered clothing separation system
-```Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!```
 
 This project is based off of a consistant problem present in closets, specified towards those who stack their clothes up in large sections of closet. Though its workability remains debatable, the project itself is meant to be a mechanism stacked beside the original set-up to take up little room but lift up layers of clothes to avoid the chaos from pulling out one piece of clothing.
 
-```You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:```
 ```HTML 
 <!--- This is an HTML comment in Markdown -->
 <!--- Anything between these symbols will not render on the published site -->
@@ -11,9 +9,7 @@ This project is based off of a consistant problem present in closets, specified 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Sofia H | Lynbrook | CS/Robotics | Incoming Sophmore 
-
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
+| Sofia H | Lynbrook | CS/Robotics | Incoming Sophomore 
 
 ![Headstone Image](logo.svg)
   
@@ -26,13 +22,14 @@ This project is based off of a consistant problem present in closets, specified 
 For your final milestone, explain the outcome of your project. Key details to include are:
 
 - Challenges
-Rail:
+  
+-- Rail:
 Create a fitting support to attach to the pinion that won't stick or get stuck on the rail. Both the rail itself and the structure took multiple cadded attempts to get right, with it frequently getting stuck along the rail and being hard to remove/slide again.
 
-Platform Supports:
+-- Platform Supports:
 Due to a lack of time, the 3D printed support was incredibly weak, and it frequently snapped with extra pressure from the turnbuckle. The solution was to add copius amounts of hot clue to secure it, which ended up working out decently well.
 
-Rack + Pinion:
+-- Rack + Pinion:
 1. Other side of structure
 Initially the gear would keep on jumping on one end of the structure so that the pinion wouldn't run straight. My solution was to cad a separate system that can attach into the gear but still allow it to turn but preventing it from jumping upwards.
 
@@ -42,10 +39,12 @@ The servo motor itself wasn't attached very well to the structure, so it would s
 
 
 - What I hope to learn in the future
+  
 I need to be more innovative with my ideas and think ahead. For this project I didn't end up with enough time to fix the major issue of the project not entirely working for its intended purpose of folded clothes. For one thing the structure is too small and limited  to work with full sized clothes, and for another thing the wedge often gets stuck at even the smallest inconsistencies with the clothing, which causes the whole thing to somewhat malfunction. Instructors did tell me that it would be an issue, but the project itself took more time than I presumed, and at the start I believed precision from the user would simply be enough so time management and thinking ahead of time. I also want to solve issues with larger scopes instead of smaller projects that are niche in use.
 
 
 - Integration:
+
 New:
 Added lead screw to create extra support for other end of the platform.
 3D printed and cadded a support for turnbuckle to latch onto.
@@ -101,10 +100,11 @@ The motor itself is powered by an external battery of around 6v along with an H-
 The motor driver along with the external power source will drive the rotation process of the stepper motor so the platform + nut moves up & down along the bar.
 
 - Challenges:
-Balance:
+
+-- Balance:
 Since one side of the main structure is a metal bar, the rest of the structure can slide along it freely. Even when connected to the other part of the structure on the stepper motor it consistantly slides down. When the stepper motor itself moves down, the other side follows relatively smoothly, but when the stepper motor moves upwards instead the acrylic plate would just bend and the other side of the plate would get stuck. My solution was to use tension to (somewhat) fix the problem by adding an extra upwards turning 'hook' on the platform with the stepper motor and connecte it to the bottom of the structure. The result partially worked by pulling the weight of the structure towards the stepper motor side, but more weight added towards both sides in the future would offset that balance, but thats a future problem.
 
-Limit Switches:
+-- Limit Switches:
 The actual connection between the wire and the limit switch itself was incredebly fragile, so the biggest problem I had with the switches would be the wire completely breaking off, so the version currently on the project is the 5-6th version. Actually wrapping the wire itself around the connection was another challenge considering the wires wouldn't always pass the hole through the connection, which would sometimes result in weak connections especially when I first started working with the switches.
 
 
@@ -130,13 +130,13 @@ The motor driver along with the external power source will drive the rotation pr
 The entire idea including the design and the first prototype following design finished. Also recieved most of the needed materials for the building process and tested the TT DC gear motor with the L298N motor driver; Nema 17 stepper motor + TMC2209 motor driver successfully. Multiple portions of the overall design were also cadded, printed and altered to fit into the rest of the materials. I used a combination of pieces of acrylic & 3D prints to create the main backing of the mechanism.
 
 - Challenges:
-  Cadding on Onshape:
+-- Cadding on Onshape:
 Started working with cadding & Onshape for the first time & could not figure out how to maneuver around & create specific shapes with the system.
 
-  Drilling through acrylic:
+-- Drilling through acrylic:
 Acrylic is incredibly easy to fracture through drilling, so drill bits had to slowly increase in size being one of the most time-consuming parts of the project so far. My first try at drilling through broke part of the acrylic clean off about half way through a 30 min process.
 
-  Working with Nema 17 Stepper Motor:
+-- Working with Nema 17 Stepper Motor:
 Since a 12V battery was unavailable, a giant power generating box was used in its place untill the power adapter arrived. When wiring I made a mistake connecting the motor driver GND to the power source and the power source to GND & may or may not have shorted the motor driver and cooked the wire. On the second try the wiring had go be repetitively fixed but the major issue lied in the potentiometer being autoset to the highest setting and drawing way too much current. The entire process took around a whole session's worth of time to fix with instructor help.
 
   What your plan is to complete your project
