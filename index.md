@@ -7,8 +7,8 @@ This project is based off of a consistant problem present in closets, specified 
 |:--:|:--:|:--:|:--:|
 | Sofia H | Lynbrook | CS/Robotics | Incoming Sophomore 
 
-![Headstone Image](logo.svg)
-![IMG_0779](work/IMG_0779.jpg)
+![Headstone Image](logo.svg)https://github.com/dawndishsoap3/Sofia_BlueStampPortfolio/blob/gh-pages/IMG_0779%20(1).jpg
+
   
 # Final Milestone
 
