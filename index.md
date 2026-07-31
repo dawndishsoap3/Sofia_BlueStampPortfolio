@@ -8,7 +8,7 @@ This project is based off of a consistant problem present in closets, specified 
 | Sofia H | Lynbrook | CS/Robotics | Incoming Sophomore 
 
 ![Headstone Image](logo.svg)
-<img src="work/IMG_0779.jpg" alt="Description of photo">
+<img src="work/IMG_0779.jpg" width="500">
   
 # Final Milestone
 
