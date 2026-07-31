@@ -482,4 +482,7 @@ How it works:
 | Wood | Stabilize rail + Servo | NA | NA |
 
 # Other Resources/Examples
+  - ideas
+  - https://www.lightinthebox.com/en/p/5-10pcs-stackable-clothing-folder-portable-plastic-shirt-and-t-shirt-storage-box-with-we-come-from-elsewhere-design-space-saving-compact-storage-suita_p19751317.html?currency=USD&litb_from=paid_adwords_shopping&sku=282_5567&country_code=US&litb_from=paid_adwords_shopping&utm_source=google_shopping&utm_medium=cpc&utm_campaign=23658868974195913331442pla-1024856699164&adword_mt=&adword_ct=800695357896&adword_kw=&adword_pos=&adword_pl=&adword_net=g&adword_tar=&adw_src_id=2907233386_23658868974_195913331442_pla-1024856699164&gad_source=1&gad_campaignid=23658868974&gbraid=0AAAAAD7vwYdxPjn2zaUWbwfjfjgHtyQTZ&gclid=CjwKCAjwrNrQBhBjEiwAoR4VOy88j4U6B_5QYF62KzP9hhdpXelJApVgJDWj4Pe1eSAwC5RyIQzWfRoC36MQAvD_BwE&enrd=1
+  - https://joybos.com/products/joybos%C2%AE-stackable-clothes-storage-basket-all-white?variant=44304146759960
 
