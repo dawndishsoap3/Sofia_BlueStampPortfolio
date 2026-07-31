@@ -7,7 +7,7 @@ This project is based off of a consistant problem present in closets, specified 
 |:--:|:--:|:--:|:--:|
 | Sofia H | Lynbrook | CS/Robotics | Incoming Sophomore 
 
-![Headstone Image](logo.svg)https://github.com/dawndishsoap3/Sofia_BlueStampPortfolio/blob/gh-pages/IMG_0779%20(1).jpg
+![Headstone Image](logo.svg)
 
   
 # Final Milestone
@@ -131,7 +131,8 @@ Started working with cadding & Onshape for the first time & could not figure out
     - My plan is to continue finishing the rest of the main structure as well as the backing in the next week along with integration with the limit switch x motor. Hopefully the second milestone will completely finished by the end of next week and the third milestone almost done. 
 
 # Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
+!(https://github.com/dawndishsoap3/Sofia_BlueStampPortfolio/blob/gh-pages/IMG_0779%20(1).jpg)
+
 
 # Code
  Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
