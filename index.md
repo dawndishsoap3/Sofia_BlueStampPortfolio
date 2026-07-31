@@ -2,10 +2,6 @@
 
 This project is based off of a consistant problem present in closets, specified towards those who stack their clothes up in large sections of closet. Though its workability remains debatable, the project itself is meant to be a mechanism stacked beside the original set-up to take up little room but lift up layers of clothes to avoid the chaos from pulling out one piece of clothing.
 
-```HTML 
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-```
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -73,8 +69,6 @@ The servo motor itself wasn't attached very well to the structure, so it would s
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UdAOEMXKUa8?si=n13M24BPBgDxM0hO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-
 - What needs to be completed:
     - Need to find a way to connect the pinion part of the mechanism onto the actual structure in a way that doesn't topple the entire wedge.
     - Create the wedge.
@@ -110,8 +104,6 @@ For your second milestone, explain what you've worked on since your previous mil
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ISGqGEbCcpE?si=TqQMsiPEvNbvCroy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-For your first milestone, describe what your project is and how you plan to build it. You can include:
 
 - Integration:
     - The stepper motor is attached to the makeshift rail(metal bar) using flat pieces of acrylic + 3D platforms to drag the platform up when the stepper motor moves up/down.
